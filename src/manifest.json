@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Better Netacad",
+  "version": "0.1.2",
+  "description": "A better environnement to learn network on cisco Netacad",
+  "author": "EpicKiwi",
+  "content_scripts": [
+    {
+      "matches": ["https://static-course-assets.s3.amazonaws.com/*"],
+      "js": ["jquery.min.js","betterNetacad.js"],
+      "css" : ["style.css"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    "*.png"
+  ]
+}

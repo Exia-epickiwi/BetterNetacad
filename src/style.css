@@ -1,0 +1,46 @@
+#page-menu-fullscreen-button{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/fullscreen.png");
+}
+
+#page-menu-fullscreen-button.ch-enabled{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/unFullscreen.png");
+}
+
+#page-menu-check-button{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/check.png");
+}
+
+#page-menu-size-up{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/font-size+.png");
+}
+
+#page-menu-size-down{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/font-size-.png");
+}
+
+#page-menu-check-button.selected{
+  background-color: #0FD62A;
+}
+
+#menu-continue .menu-button-icon{
+  background-image: url("chrome-extension://__MSG_@@extension_id__/continue.png");
+}
+
+#content, #container{
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0,.5,.5,1);
+  transition-property: width height top left;
+}
+
+#content.fullscreen{
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+#content.fullscreen #container{
+  border: none !important;
+}
+
